@@ -1,0 +1,131 @@
+html {
+  display: flex;
+  min-height: 100%;
+  background-color: #b76fff;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #b76fff 0%, #ffc794 93.23%), #ffffff;
+  padding: 36px 24px;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+  font-size: 8vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.055em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.subheading {
+  font-family: "Allura", cursive;
+  font-size: 4.5vw;
+  font-weight: bold;
+}
+
+#logo {
+  width: 148px;
+  height: 112px;
+}
+
+.logo-wrapper {
+  display: flex;
+  width: 100%;
+  height: 112px;
+  justify-content: flex-end;
+}
+
+.title-wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  padding-bottom: 112px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.055em;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.construction-emoji {
+  font-size: 5vw;
+  padding: 2vw;
+}
+
+/* Enforce a maximum font size */
+@media only screen and (min-width: 1920px) {
+  h1 {
+    font-size: 160px;
+  }
+  .subheading {
+    font-size: 90px;
+  }
+  .content-wrapper {
+    font-size: 45px;
+  }
+  .construction-emoji {
+    font-size: 90px;
+  }
+}
+
+/* Enforce minimum font sizes below the point where the vw based responsiveness works well */
+@media only screen and (max-width: 785px) {
+  .construction-emoji {
+    font-size: 24px;
+  }
+  .content-wrapper {
+    font-size: 14px;
+  }
+  #logo {
+    width: 98px;
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  h1 {
+    font-size: 40px;
+  }
+  .subheading {
+    font-size: 30px;
+  }
+  #logo {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 30px;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .construction-emoji {
+    font-size: 24px;
+  }
+  .content-wrapper {
+    font-size: 12px;
+  }
+}
